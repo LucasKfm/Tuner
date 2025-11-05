@@ -1,4 +1,4 @@
-# 🎸 Tunner - Afinador de Instrumentos Musicais
+# 🎸 Tunner - Afinador de Instrumentos Musicais (Work In Progress)
 
 Aplicativo Android de afinação de instrumentos musicais (violão, guitarra, etc.) desenvolvido em **Kotlin** com **Jetpack Compose**.
 
@@ -45,23 +45,6 @@ O projeto segue os princípios de **Clean Architecture** com separação em cama
 - **AudioRecord API** - Captura de áudio do microfone
 - **Accompanist Permissions** - Gerenciamento de permissões
 
-## 📋 Pré-requisitos
-
-- Android Studio Hedgehog ou superior
-- JDK 11 ou superior
-- SDK mínimo: API 28 (Android 9.0)
-- SDK alvo: API 36
-
-## 🚀 Como executar
-
-1. Clone o repositório
-2. Abra o projeto no Android Studio
-3. Aguarde o Gradle sincronizar as dependências
-4. Execute o app em um dispositivo físico (recomendado)
-5. Conceda a permissão de gravação de áudio
-6. O app inicia automaticamente a captura de áudio
-7. Toque uma nota no seu instrumento e observe o feedback visual em tempo real
-
 ## 📱 Permissões
 
 O aplicativo requer a seguinte permissão:
@@ -88,46 +71,6 @@ O projeto segue os seguintes princípios:
 - **KISS (Keep It Simple)**: Código simples e fácil de entender
 - **Single Responsibility**: Cada classe/função tem uma única responsabilidade
 - **Dependency Injection**: Todas as dependências são injetadas via Koin
-
-## 🔧 Estrutura de Diretórios
-
-```
-app/src/main/java/com/app4funbr/tunner/
-├── data/
-│   ├── audio/
-│   │   ├── AudioCaptureManager.kt
-│   │   └── PitchDetector.kt
-│   └── repository/
-│       └── TunerRepositoryImpl.kt
-├── domain/
-│   ├── model/
-│   │   ├── MusicalNote.kt
-│   │   └── TunerResult.kt
-│   ├── repository/
-│   │   └── ITunerRepository.kt
-│   └── usecase/
-│       ├── StartTuningUseCase.kt
-│       └── StopTuningUseCase.kt
-├── presentation/
-│   └── tuner/
-│       ├── components/
-│       │   ├── NoteScrollRow.kt
-│       │   └── TunerGauge.kt
-│       ├── TunerScreen.kt
-│       ├── TunerUiState.kt
-│       └── TunerViewModel.kt
-├── di/
-│   ├── DataModule.kt
-│   ├── DomainModule.kt
-│   ├── PresentationModule.kt
-│   └── AppModule.kt
-├── ui/theme/
-│   ├── Color.kt
-│   ├── Theme.kt
-│   └── Type.kt
-├── MainActivity.kt
-└── TunerApplication.kt
-```
 
 ## 🎵 Como funciona
 
