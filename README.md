@@ -51,15 +51,6 @@ O aplicativo requer a seguinte permissão:
 
 - `RECORD_AUDIO` - Para capturar áudio do microfone em tempo real
 
-## 📦 Dependências principais
-
-```gradle
-implementation "androidx.compose.ui:ui"
-implementation "androidx.compose.material3:material3"
-implementation "io.insert-koin:koin-android:3.5.0"
-implementation "com.google.accompanist:accompanist-permissions:0.32.0"
-```
-
 **Nota**: A detecção de pitch é feita com implementação nativa em Kotlin (sem dependências externas de DSP).
 
 ## 🎯 Princípios de Design
